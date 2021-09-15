@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Abel", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*BLAZİNG*/
+
+/*NAVBAR*/
+
+.navbar {
+    display: flex;
+    padding: 2rem 4rem;
+    background-color: #010609;
+}
+
+.mainContainer {
+    margin-top: 9rem;
+    padding: 4rem 4rem;
+    background-color: #ee5135;
+    background-image: url("1527793.webp");
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainContainerSecond {
+    padding: 4rem 4rem;
+    background-color: #010706;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.generic-anchor {
+    color: #ee5135;
+
+}
+
+.generic-anchor i {
+    font-size: 40px;
+}
+
+.generic-anchor:visited {
+    color: #ee5135;
+}
+
+.generic-anchor:hover {
+    color: #ee5135;
+}
+
+.flex-rw {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 10em "Abel", sans-serif;
+    color: #ee5135;
+    line-height: 1;
+}
+
+footer {
+    background: #010706;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-list-top {
+    width: 33.333%;
+}
+
+.footer-list-top>li {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-list-header {
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font: 2.3vw "Abel", sans-serif;
+}
+
+.footer-list-anchor {
+    font: 1.3em "Abel", sans-serif;
+}
+
+.footer-social-section {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5px;
+}
+
+.footer-social-section::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    border-top: 3px solid #ffb627;
+    width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+    position: relative;
+    z-index: 2;
+    background: #010706;
+    padding: 0 20px;
+}
+
+.footer-social-connect {
+    display: flex;
+    align-items: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 40px;
+    color: #ee5135;
+}
+
+.footer-social-small {
+    font-size: 0.6em;
+    padding: 0px 20px;
+}
+
+.footer-social-overlap>a {
+    font-size: 3em;
+}
+
+.footer-social-overlap>a:not(:first-child) {
+    margin-left: 0.38em;
+}
+
+.footer-bottom-section {
+    width: 100%;
+    padding: 10px;
+    border-top: 3px solid #ffb627;
+    margin-top: 10px;
+}
+
+.footer-bottom-section>div:first-child {
+    margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+    font-size: 1.5em;
+    color: #ee5135;
+}
+
+.footer-address {
+    display: inline;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-list-header {
+        font-size: 2em;
+    }
+
+    .footer-list-anchor {
+        font-size: 1.1em;
+    }
+
+    .footer-social-connect {
+        font-size: 2.5em;
+    }
+
+    .footer-social-overlap>a {
+        font-size: 2.24em;
+    }
+
+    .footer-bottom-wrapper {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    main {
+        font-size: 5em;
+    }
+
+    .footer-list-top {
+        width: 100%;
+    }
+
+    .footer-list-header {
+        font-size: 3em;
+    }
+
+    .footer-list-anchor {
+        font-size: 1.5em;
+    }
+
+    .footer-social-section {
+        justify-content: center;
+    }
+
+    .footer-social-section::after {
+        top: 25%;
+    }
+
+    .footer-social-connect {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .footer-social-overlap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social-icons-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-social-overlap>a:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .footer-bottom-section {
+        padding: 0 5px 10px 5px;
+    }
+
+    .footer-bottom-wrapper {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-social-overlap>a {
+        margin: auto;
+    }
+
+    .footer-social-overlap>a:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .footer-bottom-rights {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer-list-header {
+        font-size: 2.2em;
+    }
+
+    .footer-list-anchor {
+        font-size: 1.2em;
+    }
+
+    .footer-social-connect {
+        font-size: 2.4em;
+    }
+
+    .footer-social-overlap>a {
+        font-size: 2.24em;
+    }
+
+    .footer-bottom-wrapper {
+        font-size: 1.3em;
+    }
+}
+
+
+@import "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+
+.navbar-brand {
+    font-size: 45px;
+    color: #ee5135;
+    letter-spacing: .5rem;
+    font-family: "Metal Mania", cursive;
+    text-shadow: -2px -2px #ffb627;
+}
+
+.navbar .nav {
+    font-family: "Abel", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar-inverse {
+    background-color: #010609;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #010609;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: #010609;
+}
+
+.dropdown-menu {
+    background-color: #010609;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: #010609;
+}
+
+.navbar-inverse {
+    background-image: none;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-image: none;
+}
+
+.navbar-collapse {
+    border-color: transparent !important;
+    border: none !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #ee5135;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ee5135;
+}
+
+.navbar-inverse {
+    border-color: transparent !important;
+    border: none !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ee5135 !important;
+    font-size: 25px;
+    text-shadow: -1px -1px #ffb627;
+}
+
+
+.navbar-inverse .navbar-brand:hover {
+    color: #ffcc00;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ee5135 !important;
+    font-size: 20px;
+    margin: 15px;
+    text-shadow: -1px -1px #ffb627;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #ffcc00;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #ffcc00;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #ffcc00;
+}
+
+.dropdown-menu>li>a {
+    color: #ffffff;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #ffcc00;
+}
+
+/*ABOUT ME*/
+.about-me .mypic {
+    width: 450px;
+    opacity: .9;
+    border-radius: .5rem;
+    border-bottom: 8px solid #C82F3C;
+    border-left: 8px solid #ee5135;
+    transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.about-me .mypic:hover {
+    opacity: 1;
+}
+
+
+.flexedimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.abouth3 {
+    font-family: 'Abel', cursive;
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.abouth5 {
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 3px;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 3px 3px 3px #000,
+        8px 8px 8px #C82F3C;
+
+}
+
+.ul-about li {
+    margin: 6rem 0;
+}
+
+.ul-about li h4 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+.headcolored {
+    border-bottom: 5px solid #ee5135;
+
+}
+
+.ul-about li span {
+    letter-spacing: .5px;
+    line-height: 3rem;
+}
+
+
+.egitimUl {}
+
+.egitimUl li {
+    margin: 0;
+    list-style: disc;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    color: #db3a34;
+}
+
+.title i {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bar {
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2s linear;
+    box-sizing: border-box;
+    border: 3px solid #ffb627;
+}
+
+.bar-1 {
+    width: 100%;
+    margin: 10px auto 25px;
+}
+
+
+.maincsinner {
+    width: 100%;
+}
+
+.my-skills {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 40px;
+    font-family: 'Metal Mania', cursive;
+    color: #db3a34;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: -2px -2px #ffb627;
+
+}
+
+.bar-inner {
+    width: 0;
+    height: 100%;
+    line-height: 35px;
+    background: #db3a34;
+    border-right: 3px solid #ffb627;
+
+}
+
+.bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-size: 18px;
+    color: #ee5135;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: #ee5135 !important;
+        font-size: 14px;
+        margin: 0;
+        text-shadow: -1px -1px #ffb627;
+        text-align: center;
+    }
+
+    .navbar {
+        border-bottom: 1px solid #ee5135 !important;
+    }
+
+
+
+
+
+
+}
+
+@media (min-width: 992px) {
+
+    .navbar-inverse .navbar-brand {
+        font-size: 45px;
+    }
+
+    .mainContainerSecond {
+        padding: 10rem 15rem;
+
+    }
+
+    .mainContainer {
+        padding: 10rem 15rem;
+    }
+
+    .navbar {
+        display: flex;
+        padding: 2rem 15rem;
+    }
+
+    .maincsinner {
+        width: 80%;
+    }
+
+    .mainContainer {
+
+        height: 100vh;
+
+    }
+
+    .about-me .mypic {
+        width: 450px;
+
+    }
+
+    .scrolledover {
+        height: 550px;
+        overflow: scroll;
+
+    }
+
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
