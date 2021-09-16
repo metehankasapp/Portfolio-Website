@@ -131,6 +131,12 @@ footer {
     width: calc(100% - 20px);
 }
 
+
+.clear {
+    clear: both;
+}
+
+
 .footer-social-overlap {
     position: relative;
     z-index: 2;
